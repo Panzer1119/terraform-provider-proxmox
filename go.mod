@@ -3,7 +3,7 @@ module github.com/Panzer1119/terraform-provider-proxmox
 go 1.19
 
 require (
-	github.com/Panzer1119/proxmox-api-go v0.0.0-20230506120845-e495a5087844
+	github.com/Panzer1119/proxmox-api-go v0.0.0-20230506143812-d0339c2d0922
 	github.com/google/uuid v1.3.0
 	github.com/hashicorp/go-cty v1.4.1-0.20200414143053-d3edf31b6320
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.26.1
