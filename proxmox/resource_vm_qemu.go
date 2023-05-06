@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	pxapi "github.com/Telmate/proxmox-api-go/proxmox"
+	pxapi "github.com/Panzer1119/proxmox-api-go/proxmox"
 	"github.com/google/uuid"
 	"github.com/hashicorp/go-cty/cty"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
@@ -1835,13 +1835,13 @@ func prepareDiskSize(
 		}
 		diskName := fmt.Sprintf("%v%v", diskConf["type"], diskID)
 
-		diskSize := pxapi.DiskSizeGB(diskConf["size"])
+		diskSize := pxapi.DiskSizeGiB(diskConf["size"])
 
 		if _, diskExists := clonedConfig.QemuDisks[diskID]; !diskExists {
 			return err
 		}
 
-		clonedDiskSize := pxapi.DiskSizeGB(clonedConfig.QemuDisks[diskID]["size"])
+		clonedDiskSize := pxapi.DiskSizeGiB(clonedConfig.QemuDisks[diskID]["size"])
 
 		if err != nil {
 			return err

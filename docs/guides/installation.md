@@ -42,7 +42,7 @@ repository and run the following commands inside the cloned repository.
 
 ```shell
 $ export GO111MODULE=on
-$ go install github.com/Telmate/terraform-provider-proxmox/cmd/terraform-provider-proxmox
+$ go install github.com/Panzer1119/terraform-provider-proxmox/cmd/terraform-provider-proxmox
 ```
 
 Then create the executables. They are placed in the `bin` folder inside the repository.
